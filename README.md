@@ -2,7 +2,7 @@
 
 - ### Deployed At 
 	- Netlify [Click Here](https://alaramclock.netlify.app/) 
-	- Github  [Click Here](https://amankumar89.github.io/IMDB_CLONE_HTML-CSS-JS/) 
+	- Github  [Click Here](https://amankumar89.github.io/Alaram_Clock_HTML_CSS_JS/) 
 
 
 ### Features
