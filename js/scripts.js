@@ -120,7 +120,7 @@ function addToList() {
 function updateAlaramList() {
   alaramList = JSON.parse(localStorage.getItem("alaramData"));
   // console.log(alaramList);
-  if (alaramList.length === 0) return;
+  if (alaramList.length === null) return;
   const alaramListContainer = document.getElementById("alaram-list-container");
   alaramListContainer.innerHTML = "";
   alaramListContainer.innerHTML = `<h4>Upcoming Alarams</h4>`;
