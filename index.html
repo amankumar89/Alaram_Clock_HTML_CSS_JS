@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Alaram Clock</title>
+  </head>
+  <body>
+    <!-- main container -->
+    <div class="clock-container">
+      <div id="heading">
+        <h1>Alaram Clock</h1>
+      </div>
+      <!-- container for showing the current time -->
+      <div class="main-clock">
+        <div class="hrs">HH</div>
+        <span>:</span>
+        <div class="mins">MM</div>
+        <span>:</span>
+        <div class="secs">SS</div>
+        <div id="am-pm">AM</div>
+      </div>
+
+      <!-- for setting the alaram -->
+      <div class="set-alaram-container">
+        <div id="column1">
+          <select>
+            <option selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <div id="column2">
+          <select>
+            <option selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <div id="column3">
+          <select>
+            <option selected disabled hidden>AM</option>
+          </select>
+        </div>
+        <button id="btn">ADD ALARAM</button>
+      </div>
+
+      <!-- show all the alaram list -->
+      <div id="alaram-list-container"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
