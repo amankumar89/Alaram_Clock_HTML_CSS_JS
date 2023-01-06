@@ -100,7 +100,7 @@ function addToList() {
   let min = selectMenu[1].value;
   let amOrPm = selectMenu[2].value;
 
-  if (hr === "Hour" || min === "Minute" || amOrPm === "AM") {
+  if (hr === "Hour" || min === "Minute" || amOrPm === "AM/PM") {
     alert("All Fields are Required!");
     return;
   }
