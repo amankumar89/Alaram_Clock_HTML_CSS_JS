@@ -80,7 +80,7 @@ function deleteAlaramFromList(data) {
     deleteFromList(time);
     // console.log("deleted");
   }
-  window.location.reload();
+  displayTime();
 }
 
 function deleteFromList(result) {
@@ -91,8 +91,10 @@ function deleteFromList(result) {
 
 function playAlaram() {
   let result = confirm("Alaram Ringing, Press Ok to Stop !");
-  if (result) return;
-  else playAlaram();
+  if (result) {
+    displayTime();
+    return;
+  } else playAlaram();
 }
 
 function addToList() {
@@ -113,8 +115,9 @@ function addToList() {
   uniqueSet = new Set(jsonObject);
   alaramList = Array.from(uniqueSet).map(JSON.parse);
   localStorage.setItem("alaramData", JSON.stringify(alaramList));
-  updateAlaramList();
-  window.location.reload();
+  // updateAlaramList();
+  // window.location.reload();
+  displayTime();
 }
 
 function updateAlaramList() {
